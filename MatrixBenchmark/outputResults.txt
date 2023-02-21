@@ -1,0 +1,57 @@
+# JMH version: 1.36
+# VM version: JDK 11.0.18, OpenJDK 64-Bit Server VM, 11.0.18+10
+# VM invoker: C:\Program Files\Eclipse Adoptium\jdk-11.0.18.10-hotspot\bin\java.exe
+# VM options: <none>
+# Blackhole mode: full + dont-inline hint (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 5 iterations, 10 s each
+# Measurement: 20 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: org.sample.MyBenchmark.testMethod
+
+# Run progress: 0,00% complete, ETA 00:04:10
+# Fork: 1 of 1
+# Warmup Iteration   1: 21336,483 ops/ms
+# Warmup Iteration   2: 21986,901 ops/ms
+# Warmup Iteration   3: 21979,084 ops/ms
+# Warmup Iteration   4: 21968,580 ops/ms
+# Warmup Iteration   5: 21922,914 ops/ms
+Iteration   1: 21659,457 ops/ms
+Iteration   2: 21819,768 ops/ms
+Iteration   3: 21654,308 ops/ms
+Iteration   4: 21822,126 ops/ms
+Iteration   5: 21518,493 ops/ms
+Iteration   6: 21727,678 ops/ms
+Iteration   7: 21566,846 ops/ms
+Iteration   8: 21558,116 ops/ms
+Iteration   9: 21555,769 ops/ms
+Iteration  10: 21578,372 ops/ms
+Iteration  11: 21601,016 ops/ms
+Iteration  12: 21685,442 ops/ms
+Iteration  13: 21570,919 ops/ms
+Iteration  14: 21743,771 ops/ms
+Iteration  15: 21509,100 ops/ms
+Iteration  16: 21475,479 ops/ms
+Iteration  17: 21627,801 ops/ms
+Iteration  18: 21818,947 ops/ms
+Iteration  19: 21904,564 ops/ms
+Iteration  20: 22031,418 ops/ms
+
+
+Result "org.sample.MyBenchmark.testMethod":
+  21671,469 ±(99.9%) 127,616 ops/ms [Average]
+  (min, avg, max) = (21475,479, 21671,469, 22031,418), stdev = 146,963
+  CI (99.9%): [21543,853, 21799,086] (assumes normal distribution)
+
+
+# Run complete. Total time: 00:04:10
+
+REMEMBER: The numbers below are just data. To gain reusable insights, you need to follow up on
+why the numbers are the way they are. Use profilers (see -prof, -lprof), design factorial
+experiments, perform baseline and negative tests that provide experimental control, make sure
+the benchmarking environment is safe on JVM/OS/HW level, ask for reviews from the domain experts.
+Do not assume the numbers tell you what you want them to tell.
+
+Benchmark                Mode  Cnt      Score     Error   Units
+MyBenchmark.testMethod  thrpt   20  21671,469 ± 127,616  ops/ms
